@@ -1,0 +1,13 @@
+{
+  "name": "thumbnail-function",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "get-website-favicon": "0.0.7"
+  },
+  "devDependencies": {}
+}
