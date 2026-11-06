@@ -1,9 +1,9 @@
 # Hackers thumbnails
 
-`GET /api/FetchThumbnail?url=<encoded-public-url>&v=2` returns a validated
+`GET /api/FetchThumbnail?url=<encoded-public-url>` returns a validated
 192 × 192 PNG site icon, or an uncached 404 when none is available. Invalid URLs
-return 400. `v=2` lets app clients bypass permanent redirects cached from the old
-implementation; the service accepts requests with or without it.
+return 400. Clients keep their existing request URLs; Cloudflare's thumbnail
+hostname cache can be purged after deployment when cached content must be refreshed.
 
 ## Selection
 
