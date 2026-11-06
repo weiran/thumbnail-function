@@ -1,18 +1,20 @@
 {
   "name": "thumbnail-function",
   "version": "1.0.0",
-  "description": "Azure Function that redirects to the best available site icon.",
+  "description": "Azure Function that discovers, validates and renders site icons as PNG thumbnails.",
   "main": "src/functions/*.js",
   "scripts": {
     "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "test": "node --test"
   },
   "dependencies": {
     "@azure/functions": "^4.13.0",
-    "get-website-favicon": "0.0.7"
+    "cheerio": "1.2.0",
+    "icojs": "0.23.0",
+    "ipaddr.js": "2.5.0",
+    "sharp": "0.35.5"
   },
   "engines": {
-    "node": "^20 || ^22"
-  },
-  "devDependencies": {}
+    "node": "^20.19.4 || ^22.12.0"
+  }
 }
